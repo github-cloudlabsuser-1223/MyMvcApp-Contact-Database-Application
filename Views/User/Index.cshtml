@@ -8,7 +8,36 @@
 
 <p>
     @Html.ActionLink("Create New", "Create", "User")
-</p>
+    <div>
+        <label for="searchName">Find by name:</label>
+        <input type="text" id="searchName" />
+        <button type="button" id="searchBtn">Search</button>
+    </div>
+
+    @section Scripts {
+        <script>
+            $(document).ready(function () {
+                $('#searchBtn').click(function () {
+                    var name = $('#searchName').val();
+                    $.get('/api/user/search', { name: name }, function (data) {
+                        var rows = '';
+                        $.each(data, function (i, user) {
+                            rows += '<tr>'
+                                + '<td>' + user.name + '</td>'
+                                + '<td>' + user.email + '</td>'
+                                + '<td>'
+                                + '<a href="/User/Edit/' + user.id + '">Edit</a> | '
+                                + '<a href="/User/Details/' + user.id + '">Details</a> | '
+                                + '<a href="/User/Delete/' + user.id + '">Delete</a>'
+                                + '</td>'
+                                + '</tr>';
+                        });
+                        $('.table tbody').html(rows);
+                    });
+                });
+            });
+        </script>
+    }
 <table class="table">
     <tr>
         <th>
