@@ -36,20 +36,7 @@ public class UserController : Controller
 
         return Json(users);
     }
-        // GET: User/Index or User
-        /*public ActionResult Index(string searchString)
-        {
-            var users = userlist;
-            if (!string.IsNullOrEmpty(searchString))
-            {
-            users = userlist
-                .Where(u => u.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase) 
-                     || u.Email.Contains(searchString, StringComparison.OrdinalIgnoreCase))
-                .ToList();
-            }
-            ViewBag.SearchString = searchString;
-            return View(users);
-        }*/
+        
         public ActionResult Details(int id)
         {
             var user = userlist.FirstOrDefault(u => u.Id == id);
