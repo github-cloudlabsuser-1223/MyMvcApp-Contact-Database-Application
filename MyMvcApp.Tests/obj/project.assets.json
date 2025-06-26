@@ -5579,11 +5579,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\azureuser\\GitHub Copilot\\MyMvcApp.Tests\\MyMvcApp.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\azureuser\\GitHub Copilot\\MyMvcApp-Contact-Database-Application\\MyMvcApp.Tests\\MyMvcApp.Tests.csproj",
       "projectName": "MyMvcApp.Tests",
-      "projectPath": "C:\\Users\\azureuser\\GitHub Copilot\\MyMvcApp.Tests\\MyMvcApp.Tests.csproj",
+      "projectPath": "C:\\Users\\azureuser\\GitHub Copilot\\MyMvcApp-Contact-Database-Application\\MyMvcApp.Tests\\MyMvcApp.Tests.csproj",
       "packagesPath": "C:\\Users\\azureuser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\azureuser\\GitHub Copilot\\MyMvcApp.Tests\\obj\\",
+      "outputPath": "C:\\Users\\azureuser\\GitHub Copilot\\MyMvcApp-Contact-Database-Application\\MyMvcApp.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\azureuser\\AppData\\Roaming\\NuGet\\NuGet.Config"
